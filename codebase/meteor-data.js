@@ -18,7 +18,7 @@ webix.proxy.meteor = {
 		} else {
 			//[WARNING] there is no public method to convert collection name to the object
 			this.cursor = Meteor.connection._mongo_livedata_collections[this.source];
-			this.collection = this.cursor.collection; 
+			this.collection = this.cursor.collection;
 		}
 	},
 	/*
@@ -99,7 +99,7 @@ webix.proxy.meteor = {
 		delete obj.data.id;
 		if (obj.operation == "update"){
 			//data changed
-			this.collection.update(obj.id, obj.data);
+			this.collection.update(obj.id, { $set: obj.data } );
 			webix.delay(function(){
 				callback.success("", { }, -1);
 			});
