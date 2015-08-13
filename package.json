@@ -1,6 +1,6 @@
 {
   "name": "webix-meteor-data",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Meteor data adapter for Webix UI",
   "directories": {
   },
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git://github.com/webix-hub/meteor-data.git"
   },
-  "author": "Maksim Kozhukh",
+  "author": "Maksim Kozhukh <mkozhukh@ya.ru>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/webix-hub/meteor-data/issues"

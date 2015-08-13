@@ -4,15 +4,17 @@ Meteor data adapter for Webix UI
 Allows using [Webix](http://webix.com) UI components with [Meteor](https://meteor.com/).
 Reactive widgets that have been tested include [DataTable](http://docs.webix.com/datatable__index.html)
 and [List](http://docs.webix.com/desktop__list.html). All other widgets with
-[linear](http://docs.webix.com/desktop__dynamic_loading.html) underlying data structures should work too. 
+[linear](http://docs.webix.com/desktop__dynamic_loading.html) underlying data structures should work too.
+Tree and TreeTable don't work at the moment - keep an eye on [issue #7](https://github.com/webix-hub/webix-meteor-data/issues/7#issuecomment-119328896]).
 
 How to use
 -----------
 
-- Add the [webix package](https://atmospherejs.com/webix):
+- Add the [webix package](https://atmospherejs.com/webix) and [a skin](https://atmospherejs.com/?q=webix%20skin):
 
     ```sh
     meteor add webix:webix
+    meteor add webix:webix webix:skin-flat
     ```
 
 - Define data collections as usual:
